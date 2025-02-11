@@ -6,7 +6,7 @@ dataset="PeMSD4SPEED"
 num_client=8
 local=2
 
-base_path = f"/data/zm/FedCIM/log/in{input}_out{output}"
+base_path = f"log/in{input}_out{output}"
 folder_prefix = f"{dataset}_FED_"
 log_suffix = f"/{num_client}p_metis_in{input}_out{output}_adptpolu_2th_{local}locals_fedavg.log"
 
