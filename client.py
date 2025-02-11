@@ -12,7 +12,7 @@ import torch.nn as nn
 import argparse
 import configparser
 from datetime import datetime
-from model.STCIM import STCIM as Network
+from model.FedCIM import FedCIM as Network
 from model.BasicTrainer import Trainer
 from lib.TrainInits import init_seed
 from lib.dataloader import get_dataloader
