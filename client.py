@@ -44,10 +44,8 @@ def main(args):
     model = model.to(args.device)
     for p in model.parameters():
         if p.dim() > 1:
-            # 使用 Kaiming 正态分布初始化
             nn.init.kaiming_normal_(p, mode='fan_in', nonlinearity='relu')
         else:
-            # 对于一维参数（通常是偏置项）使用均匀分布
             nn.init.uniform_(p)
     # print_model_parameters(model, only_num=False)
     args.logger.info(f"memory_usage: {get_memory_usage('cuda')}")
