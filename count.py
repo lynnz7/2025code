@@ -10,7 +10,6 @@ base_path = f"log/in{input}_out{output}"
 folder_prefix = f"{dataset}_FED_"
 log_suffix = f"/{num_client}p_metis_in{input}_out{output}_adptpolu_2th_{local}locals_fedavg.log"
 
-
 pattern = r"Average Horizon, MAE: ([\d\.]+), RMSE: ([\d\.]+), MAPE: ([\d\.]+)%"
 
 
