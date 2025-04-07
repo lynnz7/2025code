@@ -137,7 +137,7 @@ def get_dataloader(args, normalizer = 'std', single=False):
     # data, scaler = normalize_dataset(data, normalizer, args.column_wise)
     
     data_i = data.copy()
-    data_i[..., 0] = smooth_fill_zeros(data[..., 0])
+    data_i[..., 0] = smooth_fill_zeros(data_i[..., 0])
 
     X, Y = Add_Window_Horizon(data, args.lag, args.horizon, single)
     X_i, Y_i = Add_Window_Horizon(data_i, args.lag, args.horizon, single)

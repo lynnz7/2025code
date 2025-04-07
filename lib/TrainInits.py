@@ -79,10 +79,46 @@ def MAPE_torch(output, label):
 
 
 def All_Metrics(pred, true, mask1, mask2):
-    mae  = MAE_torch(pred, true)
-    rmse = RMSE_torch(pred, true)
-    mape = MAPE_torch(pred, true)
+    pred = pred.cpu().numpy()
+    true = true.cpu().numpy()
+    mae  = MAE(true, pred)
+    rmse = RMSE(true, pred)
+    mape = MAPE(true, pred)
     rrse = 0.0
     corr = 0.0
     return mae, rmse, mape, rrse, corr
+
+def RMSE(y_true, y_pred):
+    with np.errstate(divide="ignore", invalid="ignore"):
+        mask = np.not_equal(y_true, 0)
+        mask = mask.astype(np.float32)
+        mask /= np.mean(mask)
+        rmse = np.square(np.abs(y_pred - y_true))
+        rmse = np.nan_to_num(rmse * mask)
+        rmse = np.sqrt(np.mean(rmse))
+        return rmse
+
+
+def MAE(y_true, y_pred):
+    with np.errstate(divide="ignore", invalid="ignore"):
+        mask = np.not_equal(y_true, 0)
+        mask = mask.astype(np.float32)
+        mask /= np.mean(mask)
+        mae = np.abs(y_pred - y_true)
+        mae = np.nan_to_num(mae * mask)
+        mae = np.mean(mae)
+        return mae
+
+
+def MAPE(y_true, y_pred, null_val=0):
+    with np.errstate(divide="ignore", invalid="ignore"):
+        if np.isnan(null_val):
+            mask = ~np.isnan(y_true)
+        else:
+            mask = np.not_equal(y_true, null_val)
+        mask = mask.astype("float32")
+        mask /= np.mean(mask)
+        mape = np.abs(np.divide((y_pred - y_true).astype("float32"), y_true))
+        mape = np.nan_to_num(mask * mape)
+        return np.mean(mape)
 
