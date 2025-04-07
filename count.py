@@ -36,9 +36,9 @@ for i in range(1, num_client+1):
                 rmse_list.append(rmse)
                 mape_list.append(mape)
     except FileNotFoundError:
-        print(f"文件未找到: {file_path}")
+        print(f"Not Found: {file_path}")
     except Exception as e:
-        print(f"处理文件时出错 {file_path}: {e}")
+        print(f"Error: {file_path}: {e}")
 
 
 average_mae = sum(mae_list) / len(mae_list) if mae_list else None

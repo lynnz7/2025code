@@ -28,7 +28,7 @@ class Trainer(object):
         if os.path.isdir(args.log_dir) == False and not args.debug:
             os.makedirs(args.log_dir, exist_ok=True)
         self.logger = logger
-        self.best_path = f'/data/zm/FedCIM/checkpoints/{args.dataset}_{args.in_steps}_{args.out_steps}_{args.cid}.pth'
+        self.best_path = f'./checkpoints/{args.dataset}_{args.in_steps}_{args.out_steps}_{args.cid}.pth'
     def val_epoch(self, epoch, val_dataloader):
         self.model.eval()
         total_val_loss = 0

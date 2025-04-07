@@ -1,5 +1,5 @@
 num_clients=8
-server_port=58885
+server_port=56662
 server_ip=127.0.0.1
 local_epochs=2
 active_mode=adptpolu
@@ -8,7 +8,7 @@ mode=FED
 num_nodes=307
 dsp=32
 dsu=32
-device='cuda:0'
+device='cuda:3'
 declare -A rand_nums
 rand_nums[$server_port]=1
 
