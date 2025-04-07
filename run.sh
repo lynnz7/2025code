@@ -1,5 +1,5 @@
 num_clients=8
-server_port=58888
+server_port=58885
 server_ip=127.0.0.1
 local_epochs=2
 active_mode=adptpolu

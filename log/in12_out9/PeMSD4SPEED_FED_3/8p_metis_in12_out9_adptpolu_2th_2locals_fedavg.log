@@ -1,0 +1,62 @@
+2025-04-07 12:47: Experiment log path in: /data/zm/2025code/log/in12_out9
+2025-04-07 12:47: Train: (10183, 12, 38, 3), (10183, 9, 38, 3)
+2025-04-07 12:47: Val: (3394, 12, 38, 3), (3394, 9, 38, 3)
+2025-04-07 12:47: Test: (3395, 12, 38, 3), (3395, 9, 38, 3)
+2025-04-07 12:47: memory_usage: (0.837890625, 2.0)
+2025-04-07 12:47: Applying learning rate decay.
+2025-04-07 12:47: *****************Model Parameter*****************
+2025-04-07 12:47: data_l torch.Size([96]) True
+2025-04-07 12:47: tod_embedding.weight torch.Size([288, 32]) True
+2025-04-07 12:47: dow_embedding.weight torch.Size([7, 32]) True
+2025-04-07 12:47: SpatialEmbedding.B_sp torch.Size([307, 32]) True
+2025-04-07 12:47: SpatialEmbedding.B_su torch.Size([307, 32]) True
+2025-04-07 12:47: data_embedding.weight torch.Size([96, 1]) True
+2025-04-07 12:47: data_embedding.bias torch.Size([96]) True
+2025-04-07 12:47: MLPA.blocks.0.linear.weight torch.Size([64, 64]) True
+2025-04-07 12:47: MLPA.blocks.0.linear.bias torch.Size([64]) True
+2025-04-07 12:47: MLPA.blocks.0.norm.weight torch.Size([64]) True
+2025-04-07 12:47: MLPA.blocks.0.norm.bias torch.Size([64]) True
+2025-04-07 12:47: MLPB.blocks.0.linear.weight torch.Size([64, 64]) True
+2025-04-07 12:47: MLPB.blocks.0.linear.bias torch.Size([64]) True
+2025-04-07 12:47: MLPB.blocks.0.norm.weight torch.Size([64]) True
+2025-04-07 12:47: MLPB.blocks.0.norm.bias torch.Size([64]) True
+2025-04-07 12:47: MLPC.blocks.0.linear.weight torch.Size([96, 96]) True
+2025-04-07 12:47: MLPC.blocks.0.linear.bias torch.Size([96]) True
+2025-04-07 12:47: MLPC.blocks.0.norm.weight torch.Size([96]) True
+2025-04-07 12:47: MLPC.blocks.0.norm.bias torch.Size([96]) True
+2025-04-07 12:47: MLPD.blocks.0.linear.weight torch.Size([128, 128]) True
+2025-04-07 12:47: MLPD.blocks.0.linear.bias torch.Size([128]) True
+2025-04-07 12:47: MLPD.blocks.0.norm.weight torch.Size([128]) True
+2025-04-07 12:47: MLPD.blocks.0.norm.bias torch.Size([128]) True
+2025-04-07 12:47: MLPE.blocks.0.linear.weight torch.Size([224, 224]) True
+2025-04-07 12:47: MLPE.blocks.0.linear.bias torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.0.norm.weight torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.0.norm.bias torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.1.linear.weight torch.Size([224, 224]) True
+2025-04-07 12:47: MLPE.blocks.1.linear.bias torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.1.norm.weight torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.1.norm.bias torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.2.linear.weight torch.Size([224, 224]) True
+2025-04-07 12:47: MLPE.blocks.2.linear.bias torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.2.norm.weight torch.Size([224]) True
+2025-04-07 12:47: MLPE.blocks.2.norm.bias torch.Size([224]) True
+2025-04-07 12:47: MLPF.blocks.0.linear.weight torch.Size([12, 12]) True
+2025-04-07 12:47: MLPF.blocks.0.linear.bias torch.Size([12]) True
+2025-04-07 12:47: MLPF.blocks.0.norm.weight torch.Size([12]) True
+2025-04-07 12:47: MLPF.blocks.0.norm.bias torch.Size([12]) True
+2025-04-07 12:47: MLPF.blocks.1.linear.weight torch.Size([12, 12]) True
+2025-04-07 12:47: MLPF.blocks.1.linear.bias torch.Size([12]) True
+2025-04-07 12:47: MLPF.blocks.1.norm.weight torch.Size([12]) True
+2025-04-07 12:47: MLPF.blocks.1.norm.bias torch.Size([12]) True
+2025-04-07 12:47: steps_linear.weight torch.Size([9, 12]) True
+2025-04-07 12:47: steps_linear.bias torch.Size([9]) True
+2025-04-07 12:47: out_linear.weight torch.Size([1, 224]) True
+2025-04-07 12:47: out_linear.bias torch.Size([1]) True
+2025-04-07 12:47: Total params num: 217470
+2025-04-07 12:47: *****************Finish Parameter****************
+2025-04-07 12:47: Train Epoch 1: 0/159 Loss: 65.589424
+2025-04-07 12:47: Train Epoch 1: 20/159 Loss: 13.655357
+2025-04-07 12:47: Train Epoch 1: 40/159 Loss: 9.163928
+2025-04-07 12:47: Train Epoch 1: 60/159 Loss: 9.137123
+2025-04-07 12:48: Train Epoch 1: 80/159 Loss: 7.879640
+2025-04-07 12:48: Train Epoch 1: 100/159 Loss: 7.807212
