@@ -1,4 +1,4 @@
-name: fedgtp
+name: fedcim
 channels:
   - pytorch
   - defaults
@@ -269,4 +269,4 @@ dependencies:
       - wrapt==1.17.2
       - xlrd==2.0.1
       - yarl==1.18.3
-prefix: /data/zm/miniconda3/envs/fedgtp
+
