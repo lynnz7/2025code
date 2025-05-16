@@ -1,6 +1,6 @@
 # 🎉 Getting Started
 
-This is the official code for *Federated Traffic Prediction with a Channel-Independent Strategy: An Efficient MLP Framework*.
+This is the official code for *Channel-Independent Federated Traffic Prediction*.
 
 ## 💿 Installing Dependencies
 
