@@ -46,7 +46,7 @@ class MLPModule(nn.Module):
         for model in self.blocks: model.fedavg()
 
 
-class FedCIM(nn.Module):
+class FedCI(nn.Module):
     def __init__(self, args):
         super().__init__()
         self.input_dim = args.input_dim
