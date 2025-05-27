@@ -8,7 +8,7 @@ mode=FED
 num_nodes=307
 dsp=32
 dsu=32
-device='cuda:3'
+device='cuda:0'
 declare -A rand_nums
 rand_nums[$server_port]=1
 
